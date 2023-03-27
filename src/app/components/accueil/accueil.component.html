@@ -1,1 +1,5 @@
-<p>accueil works!</p>
+<div>
+    <h1>Bienvenue sur la page d'accueil</h1>
+    <app-recherche (searchTextChanged)="onSearchTextChanged($event)"></app-recherche>
+    <p>Vous avez entré : {{ searchText }}</p>
+  </div>

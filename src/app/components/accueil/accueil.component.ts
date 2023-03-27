@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent {
-
+  searchText = '';
+  onSearchTextChanged(text: string) {
+    this.searchText = text;
+  }
 }
