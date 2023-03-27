@@ -1,14 +1,10 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-search-bar',
+  selector: 'app-recherche',
   templateUrl: './recherche.component.html',
   styleUrls: ['./recherche.component.css']
 })
-export class SearchBarComponent {
-  @Output() searchTextChanged = new EventEmitter<string>();
+export class RechercheComponent {
 
-  onInputChange(text: string) {
-    this.searchTextChanged.emit(text);
-  }
 }
