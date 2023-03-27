@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projet';
+  collapsed: boolean = true;
+
+  isCollapsed() {
+    return this.collapsed ? "collapsed" : "";
+  }
 }

@@ -1,4 +1,11 @@
-<app-navigation-bar></app-navigation-bar>
-<div class="container">
-  <router-outlet></router-outlet>
+<div style="height: 100%">
+  <app-navigation-bar (toggleBar)="collapsed = !collapsed"></app-navigation-bar>
+  <div class="container">
+    <div class="menuGauche" [ngClass]="isCollapsed()">
+      <app-menu-gauche></app-menu-gauche>
+    </div>
+    <div class="panel">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

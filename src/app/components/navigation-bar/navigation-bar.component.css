@@ -6,21 +6,20 @@ nav {
     margin: 0;
     padding: 0;
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
   }
-  
+
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  
+
   nav li {
     float: left;
   }
-  
+
   nav li a {
     display: block;
     color: white;
@@ -28,7 +27,7 @@ nav {
     padding: 30px 16px;
     text-decoration: none;
   }
-  
+
   nav li a:hover {
     background-color: #111;
   }
