@@ -7,6 +7,7 @@ nav ul {
 }
 
 nav li {
+  border-bottom: 1px solid #333;
   margin: 0;
   padding: 10px;
 }
