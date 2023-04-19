@@ -1,10 +1,27 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="/anime">Anime</a>
+      <div class="menu-item">
+        <a routerLink="/anime-collection">Anime</a>
+      </div>
     </li>
     <li>
-      <a routerLink="/manga">Manga</a>
+      <div class="menu-item">
+        <a routerLink="/manga-collection">Manga</a>
+      </div>
+    </li>
+    <li>
+      <div class="menu-item">
+        <a href="#" (click)="logout()">Logout</a>
+      </div>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <div class="menu-item">
+        <a><app-recherche (rechercheEffectuee)="logResults($event)"></app-recherche></a>
+      </div>
     </li>
   </ul>
 </nav>

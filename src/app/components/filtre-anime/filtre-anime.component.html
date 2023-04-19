@@ -1,0 +1,22 @@
+<div class="anime-filter">
+    <div class="filter-box">
+      <h3>Popularité</h3>
+      <select [(ngModel)]="selectedPopularity">
+        <option *ngFor="let popularity of popularities" [ngValue]="popularity">{{ popularity }}</option>
+      </select>
+    </div>
+  
+    <div class="filter-box">
+      <h3>Statut</h3>
+      <select [(ngModel)]="selectedStatus">
+        <option *ngFor="let status of statuses" [ngValue]="status">{{ status }}</option>
+      </select>
+    </div>
+  
+    <div class="filter-box">
+      <h3>Genre</h3>
+      <select [(ngModel)]="selectedGenre">
+        <option *ngFor="let genre of genres" [ngValue]="genre">{{ genre }}</option>
+      </select>
+    </div>
+  </div>

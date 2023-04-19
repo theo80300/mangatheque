@@ -1,13 +1,29 @@
 
 
+nav{
+  text-align: center;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+
+.menu-item-menu {
+  display: inline-block;
+  width: 20%; /* pour afficher 5 éléments côte à côte, la largeur de chaque élément doit être de 20% */
+  border-right: 1px solid #ccc; /* ajouter une bordure droite à chaque élément, sauf le dernier */
+  vertical-align: top;
+}
+
+.menu-item-menu:last-child {
+  border-right: none; /* enlever la bordure droite pour le dernier élément */
+}
+
+
 nav li {
-  border-bottom: 1px solid #333;
   margin: 0;
   padding: 10px;
 }
@@ -17,7 +33,7 @@ nav li:last-child {
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 

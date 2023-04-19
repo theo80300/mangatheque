@@ -8,5 +8,17 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class NavigationBarComponent {
 
   @Output() toggleBar: EventEmitter<any> = new EventEmitter();
+  @Output() rechercheEffectuee: EventEmitter<any> = new EventEmitter();
+  searchTerm: string = '';
+
+  resultatRecherche!: string;
+
+  afficherResultatRecherche(resultat: string) {
+    this.resultatRecherche = resultat;
+  }
+
+  logResults(event: any) {
+    this.rechercheEffectuee.emit(event);
+  } 
 
 }

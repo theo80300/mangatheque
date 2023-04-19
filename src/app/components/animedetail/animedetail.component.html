@@ -1,0 +1,8 @@
+
+    <div class="anime-detail">
+        <img [src]="selectedAnime?.coverImage?.large" alt="Anime cover">
+        <h2>{{ selectedAnime?.title?.romaji }}</h2>
+        <div><button (click)="onLikeClick()">Like</button></div>
+        <div><button (click)="onDislikeClick()">Dislike</button></div>
+    </div>
+

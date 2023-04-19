@@ -1,0 +1,10 @@
+
+  <div class="anime-container">
+    <div class="anime-row">
+      <div *ngFor="let anime of animeCollection" class="anime-item" (click)="onAnimeClick(anime)" [routerLink]="['/anime', anime.id]">
+        <img [src]="anime.coverImage.large" alt="Anime cover">
+        <h2>{{ anime.title.romaji }}</h2>
+      </div>
+    </div>
+  </div>
+

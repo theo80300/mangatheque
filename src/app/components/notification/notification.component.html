@@ -1,0 +1,62 @@
+
+    <div>
+        <div>
+            <mat-card class="card" style="top: 10px;"><h1>Dernier Episode Sortie</h1></mat-card>
+            <div *ngFor="let anime of animeCollection" class="anime-item">
+                <div *ngIf="anime.nextAiringEpisode">
+                    <div *ngIf="anime.nextAiringEpisode.episode">
+                        <mat-card class="card">
+                            <div class="detail">
+                                <h2 class="title">{{ anime.title.romaji }}</h2>
+                                <div class="episode-count">{{anime.nextAiringEpisode.episode-1}}</div>
+                            </div>
+                            <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg" alt="Anime cover" class="image-container">
+                        </mat-card>
+                    </div>
+                </div>
+                <div *ngIf="anime.episodes">
+                    <mat-card class="card">
+                        <div class="detail">
+                            <h2 class="title">{{ anime.title.romaji }}</h2>
+                            <div class="episode-count">{{anime.episodes}}</div>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg" alt="Anime cover" class="image-container">
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+        <div>
+            <mat-card class="card"><h1>Prochain épisode</h1></mat-card>
+            <div *ngFor="let anime of animeCollection" class="anime-item" >
+                <div *ngIf="anime.nextAiringEpisode">
+                    <div *ngIf="anime.nextAiringEpisode.episode">
+                        <mat-card class="card">
+                                <div class="detail">
+                                    <h2 class="title">{{ anime.title.romaji }}</h2>
+                                    <div class="episode-count">{{anime.nextAiringEpisode.episode}}</div>
+                                    <div class ="time"><app-timer [tempsRestant]="anime.nextAiringEpisode.timeUntilAiring"></app-timer></div>
+                                </div>
+                                <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg" alt="Anime cover" class="image-container">   
+                        </mat-card>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <mat-card class="card"><h1>Terminé</h1></mat-card>
+            <div *ngFor="let anime of animeCollection" class="anime-item">
+                <div *ngIf="anime.episodes">
+                    <mat-card class="card">
+                        <div class="detail">
+                            <h2 class="title">{{ anime.title.romaji }}</h2>
+                            <div class="episode-count">{{anime.episodes}}</div>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg" alt="Anime cover" class="image-container">
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+
+
+    </div>

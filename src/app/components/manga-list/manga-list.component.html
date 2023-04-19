@@ -1,0 +1,14 @@
+
+  <div class="manga-container">
+    <div class="manga-row">
+      <div *ngFor="let manga of mangaList" class="manga-item" (click)="onMangaClick(manga)" [routerLink]="['/manga', manga.id]">
+        <img [src]="manga.coverImage.large" alt="Manga cover">
+        <h2>{{ manga.title.romaji }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <button (click)="onPrevPageClick()">Previous</button>
+    <button (click)="onNextPageClick()">Next</button>
+  </div>
+

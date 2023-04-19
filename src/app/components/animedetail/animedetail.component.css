@@ -1,0 +1,8 @@
+.anime-detail {
+    flex: 0 0 18%;
+    margin-bottom: 10px;
+    text-align: center;
+    object-fit: cover; /* Masquer les zones non couvertes par l'image */
+  }
+
+

@@ -1,0 +1,9 @@
+<div class="search-box">
+  <input type="text" [(ngModel)]="rechercheValue" placeholder="Rechercher un anime">
+  <button (click)="effectuerRecherche()" [routerLink] = "['animerecherche',rechercheValue]">Rechercher</button>
+</div>
+
+<div class="search-box">
+  <input type="text" [(ngModel)]="rechercheValue2" placeholder="Rechercher un manga">
+  <button (click)="effectuerRecherche2()" [routerLink] = "['mangarecherche',rechercheValue2]">Rechercher</button>
+</div>

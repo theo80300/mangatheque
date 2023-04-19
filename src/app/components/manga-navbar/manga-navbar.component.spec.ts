@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListeNavbarComponent } from './liste-navbar.component';
+import { MangaNavbarComponent } from './manga-navbar.component';
 
-describe('ListeNavbarComponent', () => {
-  let component: ListeNavbarComponent;
-  let fixture: ComponentFixture<ListeNavbarComponent>;
+describe('MangaNavbarComponent', () => {
+  let component: MangaNavbarComponent;
+  let fixture: ComponentFixture<MangaNavbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListeNavbarComponent ]
+      declarations: [ MangaNavbarComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListeNavbarComponent);
+    fixture = TestBed.createComponent(MangaNavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

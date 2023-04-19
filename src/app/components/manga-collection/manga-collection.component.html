@@ -1,0 +1,10 @@
+
+    <div class="manga-container">
+      <div class="manga-row">
+        <div *ngFor="let manga of mangaCollection" class="manga-item" (click)="onMangaClick(manga)" [routerLink]="['/manga', manga.id]">
+          <img [src]="manga.coverImage.large" alt="Manga cover">
+          <h2>{{ manga.title.romaji }}</h2>
+        </div>
+      </div>
+    </div>
+

@@ -1,0 +1,9 @@
+
+  <div class="manga-detail">
+    <img [src]="selectedManga?.coverImage?.large" alt="Manga cover">
+    <h2>{{ selectedManga?.title?.romaji }}</h2>
+    <div><button (click)="onLikeClick()">Like</button></div>
+    <div><button (click)="onDislikeClick()">Dislike</button></div>
+  </div>
+
+

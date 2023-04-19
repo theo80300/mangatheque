@@ -1,12 +1,10 @@
 <nav>
-  <div>
-    <ul>
-      <li><a routerLink="/">Accueil</a></li>
-      <li><a routerLink="/liste">Liste</a></li>
-      <li><a routerLink="/recherche">Recherche</a></li>
-    </ul>
-  </div>
-  <div>
-    <i class="fa-solid fa-bars" (click)="toggleBar.emit()"></i>
-  </div>
+    <div>
+        <ul>
+            <div class ="menu-item"><li><a routerLink="/">Accueil</a></li></div>
+            <div class = "menu-item"><li><a routerLink="/manganavbar">Manga</a></li></div>
+            <div class ="menu-item"><li><a routerLink="/animenavbar">Anime</a></li></div>
+            <div class="menu-item"><li><a (click)="toggleBar.emit()">Menu</a></li></div>
+        </ul>
+    </div>
 </nav>
